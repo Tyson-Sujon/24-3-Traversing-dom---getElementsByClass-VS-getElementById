@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tour of DOM </title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<style>
+    h1{
+        color: gold;
+    }
+</style>
+<body>
+    <header>
+        <h1>this is my header no banner</h1>
+    </header>
+    <main>
+        <div>
+            <h1> started to get all tag list</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa minima molestiae obcaecati voluptatibus perspiciatis beatae facere magnam maiores quis illo culpa officiis, enim ex quos voluptate nulla officia suscipit dignissimos. Autem quos quo voluptate omnis ea.</p>
+        </div>
+
+         <div>
+            <h2>started to get all tag list 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iste nam, necessitatibus quo sapiente est sunt illo, recusandae vero odio deserunt magnam praesentium vitae repellat.</p>
+        </div> 
+       
+        <ul>
+            <li>shafayet</li>
+            <li>bonobash</li>
+            <li>jalali set</li>
+            <li>dom maro dom</li>
+            <li>new collection</li>
+        </ul>
+    </main>
+    <footer></footer>
+    <script>
+       
+       console.log('document object model');
+       console.log('document object model');
+       //object er function k method bole
+        const student= {
+            name: 'Abul mia',
+            id:121,
+            study(subject){
+                console.log('studying subject:', subject)
+                
+            }
+        }
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection);
+        for (const lis of liCollection) {
+            console.log(lis.innerText);
+            
+        }
+
+        const tryNewTag = document.getElementsByTagName('div');
+        console.log(tryNewTag);
+        
+        for(start of tryNewTag){
+            // ata html tag soho ashbe
+            console.log('for innerHTML=',start.innerHTML);
+            // ata sudhu plain text ashbe
+            console.log('for innerText=',start.innerText);
+        }
+        
+        
+    </script>
+
+
+
+
+    <script src="js/hello.js">'outer script'</script>
+</body>
+</html>
