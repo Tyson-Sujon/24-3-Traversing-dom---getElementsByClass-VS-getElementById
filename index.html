@@ -10,6 +10,9 @@
     h1{
         color: gold;
     }
+    #food-title{
+        color:green;
+    }
 </style>
 <body>
     <header>
@@ -33,6 +36,18 @@
             <li>dom maro dom</li>
             <li>new collection</li>
         </ul>
+        <section>
+            <h1 id="food-title">Food i love</h1>
+            <ul>
+                <li>Rice</li>
+                <li>potato</li>
+                <li>fish</li>
+                <li>Burgar</li>
+                <li>lentils</li>
+                <li>Pizza</li>
+                <li>Mashroom</li>
+            </ul>
+        </section>
     </main>
     <footer></footer>
     <script>
@@ -57,7 +72,6 @@
 
         const tryNewTag = document.getElementsByTagName('div');
         console.log(tryNewTag);
-        
         for(start of tryNewTag){
             // ata html tag soho ashbe
             console.log('for innerHTML=',start.innerHTML);
@@ -65,6 +79,7 @@
             console.log('for innerText=',start.innerText);
         }
         
+        const foodTitelH1=document.getElementById('food-title');
         
     </script>
 
